@@ -26,7 +26,7 @@ export default async function HomePage() {
               unoptimized
               className='absolute -z-10 top-0 w-full h-[85%] md:h-full object-cover brightness-50'
             />
-            <section className='flex flex-col h-[calc(100vh-68px)]'>
+            <section className='flex flex-col h-[calc(100vh-64px)] lg:h-[calc(100vh-71px)]'>
               <section className='flex flex-col lg:flex-row-reverse h-4/5'>
                 <div className='basis-8/12'></div>
                 <section className='basis-4/12 flex flex-col items-center justify-center'>
