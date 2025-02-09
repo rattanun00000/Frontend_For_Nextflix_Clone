@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Netflix Clone Project
 
-## Getting Started
+A Netflix clone built with Next.js, implementing Clean Architecture principles for maintainable and scalable code.
 
-First, run the development server:
+## 🚀 Features
 
+- Clean Architecture implementation
+- Responsive design
+- Movie data integration
+- Atomic Design System
+- Type-safe development with TypeScript
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide Icons
+- **Architecture**: Clean Architecture
+- **Design Pattern**: Atomic Design
+
+## 🏃‍♂️ Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/rattanun00000/Frontend_For_Nextflix_Clone.git
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up environment variables:
+Create a `.env` file in the root directory and add:
+```
+NEXT_PUBLIC_API_URL=https://backend-for-nextflix-clone.vercel.app/
+```
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) to view the application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏛 Architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project follows Clean Architecture principles with the following layers:
 
-## Learn More
+- **Domain Layer** (`core/domain/`): Contains business entities and repository interfaces
+- **Use Cases** (`core/usecases/`): Implements application business rules
+- **Infrastructure** (`infrastructure/`): External implementations (API clients, repositories)
+- **Presentation** (`presentation/`): UI components following Atomic Design
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Component Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Components are organized following Atomic Design principles:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Atoms**: Basic UI elements
+- **Molecules**: Simple component combinations
+- **Organisms**: Complex UI sections
 
-## Deploy on Vercel
+## 🔐 Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Required environment variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `NEXT_PUBLIC_API_URL`: Base URL for the movie API
+
+## 📝 Development Guidelines
+
+1. Follow the established Clean Architecture patterns
+2. Use TypeScript for type safety
+3. Implement new features in their respective layers
+4. Follow Atomic Design principles for new components
+5. Maintain responsiveness across all screen sizes
+
+## 📦 Build
+
+To build the project for production:
+
+```bash
+npm run build
+# or
+yarn build
+```
