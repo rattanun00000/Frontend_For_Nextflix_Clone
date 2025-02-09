@@ -73,6 +73,7 @@ export default async function HomePage() {
       </main>
     );
   } catch (error) {
+    console.error('Failed to load movies:', error);
     return (
       <div className="text-center py-8">
         <p className="text-red-500">Failed to load movies</p>
